@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background:linear-gradient(to right ,orange 0%,red 100%); */
+  background-color: black;
+}
+.logo::first-letter{
+  font-size: 40px;
+  color: white;
+  letter-spacing: 2px;
+}
+.logo{
+  cursor: pointer;
+  font-family: "Poppins";
+  background: linear-gradient(to right,orange 0%,red 100%);
+  -webkit-background-clip:content-box;
+  background-clip: text;
+  color: transparent;
+  
+}
+.container ul{
+  width:100% ;
+  display: flex;
+  color: white;
+}
+ul .menu-list{
+  list-style: none;
+  margin: 20px;
+  cursor: pointer;
+    position: relative;
+}
+.menu-list::before{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height:5px ;
+  bottom: -7px;
+  transform: translateX(-100%);
+  transition: 0.3s linear;
+  background-color: orange;
+  border-radius: 10px;
+  opacity: 0;
+}
+.menu-list .item{
+  text-decoration: none ;
+  color: white;
+}
+.menu-list:hover,.item:hover{
+  color: orange !important;
+}
+.menu-list:hover::before{
+transform: translateX(0);
+opacity: 1;
+width: 100%;
+}
+.login-container{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px ;
+}
+.main-container{
+  width: 500px;
+}
+.login-heading{
+  text-align: center;
+  font-size: 40px;
+  font-family: "Poppins", system-ui;
+  background: linear-gradient(to right ,orange 0%,red 100%);
+  background-clip: text;
+  font-weight: bold;
+  color: transparent;
+}
+form div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+form div input{
+width: 100%;
+height: 40px;
+padding-left:10px ;
+border-radius: 5px;
+border: 2px solid green;
+font-size: 16px;
+}
+.button{
+  width: 100%;
+  /* height: 40px; */
+  padding: 10px;
+  font-size: 18px;
+  /* border: none; */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+.button:hover{
+background-color: white;
+color: black;
+border: 2px solid black;
+}
+.profile{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid green;
+  cursor: pointer;
+  background-color: white;
+  margin: 0px auto;
+  transition: 0.3s linear;
+}
+.profile:hover{
+  border: 2px solid red;
+  background-color: black;
+}
+.toggle{
+  display: none;
+}
+.home-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 10px; */
+}
+.home-container h1,.heading{
+  margin: 50px 0px 40px 0px;
+  cursor: pointer;
+  font-family: "Poppins";
+  background: linear-gradient(to right,orange 0%,red 100%);
+  -webkit-background-clip:content-box;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+.home-container li{
+  margin: 20px;
+  list-style: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-size:16px;
+}
+li span{
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.line{
+  background-color: red !important;
+  width: 7px ;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form-quote{
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-quote input{
+  width: 100%;
+height: 40px;
+padding-left:10px ;
+border-radius: 5px;
+border: 2px solid green;
+font-size: 16px;
+}
+.form-quote button{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+.form-quote button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.update-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+}
+.update-main-container{
+width: 500px;
+background: white;
+border-radius: 10px;
+margin: 10px auto;
+padding: 20px;
+}
+.heading-icon{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-icon h1{
+  cursor: pointer;
+  font-family: "Poppins";
+  background: linear-gradient(to right,orange 0%,red 100%);
+  -webkit-background-clip:content-box;
+  background-clip: text;
+  color: transparent;
+}
+.heading-icon .fas{
+  padding: 10px;
+  /* border: 2px solid blue; */
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.update-form{
+  margin: 20px  0px;
+}
+.update-form input{
+  width: 100%;
+  height: 40px;
+  padding-left:10px ;
+  border-radius: 5px;
+  border: 2px solid green;
+  font-size: 16px;
+}
+.update-form button{
+  width: 100%;
+  /* height: 40px; */
+  padding: 10px;
+  font-size: 18px;
+  /* border: none; */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+.update-form button:hover{
+  background-color: white;
+  color: black;
+}
+.account{
+  margin:20px 0px 0px 0px;
+
+}
+.link{
+  color: blue;
+  text-decoration: none;
+}
+@media(max-width:500px){
+  .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px !important;
+  }
+  .menu-item{
+    display: none !important;
+  }
+  .logo{
+     margin: 15px 10px  ;
+     font-size: 25px;
+     margin: 10px !important;
+  }
+  
+  .login-heading{
+    font-size: 30px;
+  }
+  .login-container{
+    width: 100% !important;
+  }
+  .main-container{
+    width: 90%;
+    margin: 0 !important;
+  }
+ form div{
+  margin: 30px 0px;
+
+ } 
+ .toggle{
+  display: block;
+  margin: 5px 20px;
+ }
+ .toggle .fas{
+  color: white;
+  cursor: pointer;
+ }
+ .mobile-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px !important;
+  left: 0px !important;
+  background: rgba(0,0,0,0.5);
+  margin: 0px auto;
+ }
+ 
+.mobile-main-container{
+  width: 70%;
+  height: 100vh;
+  background-color: black;
+  transition: 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+
+.mobile-main-container h2{
+  text-align: center;
+  margin-top:50px ;
+
+}
+.mobile-menu{
+  margin:20px 0px 30px 50px ;
+  position: relative;
+  list-style: none;
+    width: fit-content;
+    color: white;
+}
+.mobile-menu::before{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  background-color: orange;
+  border-radius: 10px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear;
+  height: 5px;
+  width: 0%;
+}
+.mobile-menu:hover,.mobile-item:hover{
+  color: orange !important;
+
+}
+.mobile-menu:hover::before{
+  transform:translateX(0) ;
+  opacity: 1;
+  width:100%;
+}
+.mobile-main-container ul li .mobile-item{
+color: white;
+text-decoration: none;
+}
+.home-container{
+  width: 100%;
+  padding: 0px 15px 0px 10px;
+}
+.home-container h1{
+  font-size: 25px;
+}
+.home-container li{
+  width: 100%;
+  margin: 10px;
+}
+li span{
+  margin-right: 10px;
+  color: blue;
+}
+.update-main-container{
+  width: 90%;
+}
+.heading-icon h1{
+  font-size: 25px;
+}
+.form-quote{
+  width: 100%;
+}
+}
