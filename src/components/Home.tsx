@@ -62,6 +62,8 @@ if(error){
 },[error]);
 console.log("log");
 
+console.log("new log");
+
   return (
    <div>
     <div className='home-container'>
