@@ -59,8 +59,7 @@ useEffect(()=>{
 if(error){
   console.log(error.stack)
 }
-},[error]);
-console.log("log")
+},[error])
 
   return (
    <div>
